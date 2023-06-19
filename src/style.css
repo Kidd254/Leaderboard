@@ -9,13 +9,33 @@ body {
 
 .main-container{
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0, auto;
+    gap: 20px;
 }
 
 .scores-container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 400px;
+}
+
+.score-heading {
+    order: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.recent {
+    order: 0;
+    width: 150px;
+}
+.refresh {
+    order: 2;
+    margin: 20px 0;
 }
 
 .add-container{
@@ -28,7 +48,15 @@ flex-direction: column;
 }
 
 #form{
-    order: 2;
+    order: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 400px;
+}
+
+.submit {
+    width: 100px;
+    padding-right: 0;
 }
