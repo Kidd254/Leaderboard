@@ -8,12 +8,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
      index: './src/index.js',
      print: './src/output.js',
    },
-
+devtool: 'inline-source-map',
   plugins: [
 
     new HtmlWebpackPlugin({
-
-      title: 'Development',
+template: './src/web.html',
+      title: 'Leaderboard',
 
     }),
 
@@ -21,5 +21,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
    output: {
      filename: '[name].bundle.js',
      path: path.resolve(__dirname, 'dist'),
+      clean: true,
    },
+   module: {
+
+    rules: [
+
+      {
+
+        test: /\.css$/i,
+
+        use: ['style-loader', 'css-loader'],
+
+      },
+
+    ],
+
+  },
  };
