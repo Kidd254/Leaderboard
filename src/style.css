@@ -1,0 +1,34 @@
+body {
+    background-color: burlywood;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.scores-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-container{
+display: flex;
+flex-direction: column;
+}
+
+.add {
+    order: 0;
+}
+
+#form{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+}
