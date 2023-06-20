@@ -11,12 +11,12 @@ export default class Scores{
       }
     }
 
-    storage(score){
+    storage=(score)=>{
       this.scoreList.push(score);
       localStorage.setItem('info', JSON.stringify(this.scoreList));
     }
     
-    create(score){
+    create=(score)=>{
       const scoreListContainer =document.createElement('div');
       scoreListContainer.classList.add('list-container')
       const name= document.createElement('p');
@@ -44,7 +44,7 @@ const display = new Scores();
 display.displayScores();
 
 // A function that is called when the user clicks the submit button
-function addScore(event) {
+const addScore=(event)=> {
   // If the inputs has values then form is submitted
   if (!nameInput.validity.valueMissing && !scoreInput.validity.valueMissing) {
     event.preventDefault();
