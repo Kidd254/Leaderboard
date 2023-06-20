@@ -1,8 +1,9 @@
 import { display } from './score.js';
+
 const nameInput = document.querySelector('#name');
 const scoreInput = document.querySelector('#score');
-const formElement = document.querySelector('#form');
-export const addScore=(event)=> {
+export const formElement = document.querySelector('#form');
+export const addScore = (event) => {
   // If the inputs has values then form is submitted
   if (!nameInput.validity.valueMissing && !scoreInput.validity.valueMissing) {
     event.preventDefault();
@@ -14,5 +15,4 @@ export const addScore=(event)=> {
     // Creates the new scores element
     display.create(scored);
   }
-}
-formElement.addEventListener('submit', addScore);
+};
