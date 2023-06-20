@@ -1,6 +1,3 @@
-const nameInput = document.querySelector('#name');
-const scoreInput = document.querySelector('#score');
-const formElement = document.querySelector('#form');
 const scoreContainer = document.querySelector('.display');
 export default class Scores{
     constructor(){
@@ -40,21 +37,8 @@ export default class Scores{
   }
 }
 // A instance of the class that displays the added scores
-const display = new Scores();
+export const display = new Scores();
 display.displayScores();
 
-// A function that is called when the user clicks the submit button
-const addScore=(event)=> {
-  // If the inputs has values then form is submitted
-  if (!nameInput.validity.valueMissing && !scoreInput.validity.valueMissing) {
-    event.preventDefault();
-    const scored = { name: nameInput.value, score: scoreInput.value };
-    // Save the name and score in the array and the local storage
-    display.storage(scored);
-    // Resets the form
-    formElement.reset();
-    // Creates the new scores element
-    display.create(scored);
-  }
-}
-formElement.addEventListener('submit', addScore);
+
+
