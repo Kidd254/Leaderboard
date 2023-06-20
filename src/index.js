@@ -1,2 +1,3 @@
 import './style.css';
-import scores from './module/score.js';
+import Scores from './module/score.js';
+import { addScore } from './module/addScore.js';
