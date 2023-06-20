@@ -1,5 +1,8 @@
 body {
     background-color: burlywood;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
 }
 
 .heading {
@@ -7,12 +10,18 @@ body {
     justify-content: center;
 }
 
-.main-container{
+.main {
     display: flex;
     justify-content: center;
     max-width: 1300px;
     margin: 0, auto;
+}
+
+.mainscore-container{
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    padding-right: 90px;
 }
 
 .scores-container{
@@ -26,16 +35,34 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 300px;
 }
 
 .recent {
     order: 0;
     width: 150px;
+    white-space: nowrap;
 }
 .refresh {
-    order: 2;
     margin: 20px 0;
+    margin-left: auto;
+}
+
+.display{
+    border: 2px solid black;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.list-container{
+    display: flex;
+}
+
+.list-container:nth-child(odd){
+background-color:lightgrey;
+}
+
+.list-container:nth-child(even){
+    background-color: #fff;
 }
 
 .add-container{
@@ -55,8 +82,18 @@ flex-direction: column;
     gap: 20px;
     width: 400px;
 }
+#name {
+    border: 2px solid #000;
+    height:2em
+}
+
+#score {
+    border: 2px solid #000;
+    height: 2em;
+}
 
 .submit {
     width: 100px;
-    padding-right: 0;
+    margin-left: auto;
+    height: 2em;
 }
