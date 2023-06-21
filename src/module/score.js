@@ -54,8 +54,6 @@ export default class Scores {
      async fetching(fetchData, scoreContainer) {
        const toJson = await fetchData.json();
        this.scoreList = toJson.result;
-       console.log('inside the scoreList object:', this.scoreList);
        this.create(scoreContainer);
-       console.log('inside the score:', this.create(scoreContainer));
      }
 }

@@ -4,7 +4,7 @@ const nameInput = document.querySelector('#name');
 export const formElement = document.querySelector('#form');
 const scoreInput = document.querySelector('#score');
 const submitBtn = document.querySelector('.submit');
-const addYourScore = () => {
+const addMyScore = () => {
   const listScore = new Scores();
   submitBtn.addEventListener('click', () => {
     if (scoreInput.value === '' || nameInput.value === '') {
@@ -19,4 +19,4 @@ const addYourScore = () => {
   });
 };
 
-export default addYourScore;
+export default addMyScore;

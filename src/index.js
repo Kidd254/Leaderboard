@@ -1,11 +1,11 @@
 import './style.css';
-import addYourScore from './module/addScore.js';
+import addMyScore from './module/addScore.js';
 import recentScore from './module/refresh.js';
 
-const init = () => {
-  const mainContainer = document.querySelector('.display');
-  recentScore(mainContainer);
-  addYourScore(mainContainer);
+const call = () => {
+  const dynamicDisplay = document.querySelector('.display');
+  recentScore(dynamicDisplay);
+  addMyScore(dynamicDisplay);
 };
 
-init();
+call();
