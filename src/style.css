@@ -1,0 +1,101 @@
+body {
+  background-color: burlywood;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0, auto;
+}
+
+.mainscore-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 90px;
+}
+
+.scores-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.score-heading {
+  order: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.recent {
+  order: 0;
+  width: 150px;
+  white-space: nowrap;
+}
+
+.refresh {
+  margin: 20px 0;
+  margin-left: auto;
+}
+
+.display {
+  border: 2px solid black;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.list-container {
+  display: flex;
+}
+
+.list-container:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.list-container:nth-child(even) {
+  background-color: #fff;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.add {
+  order: 0;
+}
+
+#form {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 400px;
+}
+
+#name {
+  border: 2px solid #000;
+  height: 2em;
+}
+
+#score {
+  border: 2px solid #000;
+  height: 2em;
+}
+
+.submit {
+  width: 100px;
+  margin-left: auto;
+  height: 2em;
+}
