@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 export const scoreContainer = document.querySelector('.display');
 export default class Scores {
   constructor() {
@@ -12,22 +13,24 @@ export default class Scores {
       localStorage.setItem('info', JSON.stringify(this.scoreList));
     }
 
-    create=(score) => {
-      const scoreListContainer = document.createElement('div');
-      scoreListContainer.classList.add('list-container');
-      const name = document.createElement('p');
-      name.classList.add('name-added');
-      const points = document.createElement('p');
-      points.classList.add('score-added');
-      if (score.name && score.score) {
-        name.innerHTML = score.name;
-        points.innerHTML = score.score;
-      }
+    create=(scoreContainer) => {
+      scoreContainer.innerHTML = '';
+      this.scoreList.forEach((score) => {
+        const scoreListContainer = document.createElement('div');
+        scoreListContainer.classList.add('list-container');
+        const name = document.createElement('p');
+        name.classList.add('name-added');
+        const points = document.createElement('p');
+        points.classList.add('score-added');
 
-      console.log('This is the result after fetching:', name.innerHTML, points.innerHTML);
-      scoreListContainer.append(name);
-      scoreListContainer.append(points);
-      scoreContainer.append(scoreListContainer);
+        name.innerHTML = score.user;
+        points.innerHTML = score.score;
+
+        scoreListContainer.append(name);
+        scoreListContainer.append(points);
+        scoreContainer.append(scoreListContainer);
+      });
+      return scoreContainer;
     }
 
      addScores = (userData, scoreData) => {
@@ -51,9 +54,8 @@ export default class Scores {
      async fetching(fetchData, scoreContainer) {
        const toJson = await fetchData.json();
        this.scoreList = toJson.result;
-       // Clear the score container
-       scoreContainer.innerHTML = '';
-
+       console.log('inside the scoreList object:', this.scoreList);
        this.create(scoreContainer);
+       console.log('inside the score:', this.create(scoreContainer));
      }
 }
