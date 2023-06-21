@@ -6,18 +6,16 @@ const scoreInput = document.querySelector('#score');
 const submitBtn = document.querySelector('.submit');
 const addYourScore = () => {
   const listScore = new Scores();
-  submitBtn.addEventListener('click', (event) => {
+  submitBtn.addEventListener('click', () => {
     if (scoreInput.value === '' || nameInput.value === '') {
-      event.preventDefault();
+      // eslint-disable-next-line no-alert
+      return alert('Please fill the User and Score fields');
     }
     if (!Number.isNaN(parseInt(scoreInput.value, 10))) {
-      const scored = { name: nameInput.value, score: scoreInput.value };
-      // Save the name and score in the array and the local storage
-      listScore.storage(scored);
-      formElement.reset();
-      // Creates the new scores element
-      listScore.create(scored);
+      return listScore.addScores(nameInput.value, scoreInput.value);
     }
+    // eslint-disable-next-line no-alert
+    return alert('Score must be a numeric value');
   });
 };
 
