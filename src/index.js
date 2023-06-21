@@ -1,4 +1,3 @@
-
 import addMyScore from './module/addScore.js';
 import recentScore from './module/refresh.js';
 
