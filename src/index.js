@@ -1,4 +1,11 @@
 import './style.css';
-import { addScore, formElement } from './module/addScore.js';
+import addYourScore from './module/addScore.js';
+import recentScore from './module/refresh.js';
 
-formElement.addEventListener('submit', addScore);
+const init = () => {
+  const mainContainer = document.querySelector('.display');
+  recentScore(mainContainer);
+  addYourScore(mainContainer);
+};
+
+init();
