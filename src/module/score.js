@@ -1,4 +1,4 @@
-const scoreContainer = document.querySelector('.display');
+export const scoreContainer = document.querySelector('.display');
 export default class Scores {
   constructor() {
     this.scoreList = [];
@@ -21,20 +21,39 @@ export default class Scores {
       points.classList.add('score-added');
       if (score.name && score.score) {
         name.innerHTML = score.name;
-        points.innerHTML = `: ${score.score}`;
+        points.innerHTML = score.score;
       }
+
+      console.log('This is the result after fetching:', name.innerHTML, points.innerHTML);
       scoreListContainer.append(name);
       scoreListContainer.append(points);
       scoreContainer.append(scoreListContainer);
     }
 
-    displayScores() {
-      scoreContainer.innerHTML = '';
-      this.scoreList.forEach((score) => {
-        this.create(score);
-      });
-    }
+     addScores = (userData, scoreData) => {
+       fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RPILbm8HelgXKYt5Q7oK/scores/', {
+         method: 'POST',
+         body: JSON.stringify({
+           user: userData,
+           score: scoreData,
+         }),
+         headers: {
+           'Content-type': 'application/json; charset=UTF-8',
+         },
+       });
+     }
+
+     async getList(scoreContainer) {
+       const fetchData = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RPILbm8HelgXKYt5Q7oK/scores/');
+       this.fetching(fetchData, scoreContainer);
+     }
+
+     async fetching(fetchData, scoreContainer) {
+       const toJson = await fetchData.json();
+       this.scoreList = toJson.result;
+       // Clear the score container
+       scoreContainer.innerHTML = '';
+
+       this.create(scoreContainer);
+     }
 }
-// A instance of the class that displays the added scores
-export const display = new Scores();
-display.displayScores();
