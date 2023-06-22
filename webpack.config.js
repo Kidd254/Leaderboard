@@ -9,6 +9,11 @@ module.exports = {
     print: './src/output.js',
   },
   devtool: 'inline-source-map',
+  devServer: {
+
+    static: './dist',
+
+  },
   plugins: [
 
     new HtmlWebpackPlugin({
@@ -34,8 +39,20 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
 
       },
+      {
+
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+
+        type: 'asset/resource',
+
+      },
 
     ],
+
+  },
+  optimization: {
+
+    runtimeChunk: 'single',
 
   },
 };

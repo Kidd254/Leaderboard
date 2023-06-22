@@ -1,13 +1,25 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src:
+    url('./fonts/DancingScript-Regular.ttf') format('ttf'),
+    url('./fonts/DancingScript-Bold.ttf') format('ttf'),
+    url('./fonts/DancingScript-Medium.ttf') format('ttf'),
+    url('./fonts/DancingScript-SemiBold.ttf') format('ttf');
+
+  /* Add more src declarations for other font file formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: burlywood;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: medium;
-  font-weight: bold;
 }
 
 .heading {
   display: flex;
   justify-content: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
 }
 
 .main {
@@ -15,12 +27,14 @@ body {
   justify-content: center;
   max-width: 1300px;
   margin: 0, auto;
+  height: 100vh;
+  width: 100%;
 }
 
 .mainscore-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding-right: 90px;
 }
 
@@ -41,11 +55,21 @@ body {
   order: 0;
   width: 150px;
   white-space: nowrap;
+  font-family: 'Dancing Script', cursive;
+  font-weight: semi-bold;
 }
 
 .refresh {
   margin: 20px 0;
   margin-left: auto;
+  font-family: 'Dancing Script', cursive;
+  font-weight: semi-bold;
+}
+
+.refresh:hover {
+  background-color: blue;
+  border-radius: 8px;
+  box-shadow: black;
 }
 
 .display {
@@ -66,6 +90,15 @@ body {
   background-color: #fff;
 }
 
+#score-list {
+  font-family: 'Dancing Script', cursive;
+  font-weight: regular;
+  overflow-y: scroll;
+  max-height: 300px;
+  height: auto;
+  margin-left: 0;
+}
+
 .add-container {
   display: flex;
   flex-direction: column;
@@ -73,6 +106,8 @@ body {
 
 .add {
   order: 0;
+  font-family: 'Dancing Script', cursive;
+  font-weight: semi-bold;
 }
 
 #form {
@@ -87,15 +122,26 @@ body {
 #name {
   border: 2px solid #000;
   height: 2em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: regular;
 }
 
 #score {
   border: 2px solid #000;
   height: 2em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: regular;
 }
 
 .submit {
   width: 100px;
   margin-left: auto;
   height: 2em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: regular;
+}
+
+.submit:hover {
+  background-color: blue;
+  border-radius: 8px;
 }

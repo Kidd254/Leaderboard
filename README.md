@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <h3><b>Awesome Books</b></h3>
+  <h3><b>Leaderboard</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -22,7 +22,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Awesome Books <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
 **To Do List** is a project that consists of building a single page application with HTML, CSS and JS that allows users to add and remove books from a list.
 
@@ -47,6 +47,7 @@
 - **Manage collections with Class javascript**
 - **webpack**
 - **Gitflow**
+- **API**
 - **Single page application approach**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -131,13 +132,17 @@ This will show you a log with details about errors (if any) and changes that wou
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] **Add Client side validations to the Add new Book form**
-- [x] **Implement the persistence of Books data using Local storage**
-- [x] **Add css styles in All awesome books section**
-- [x] **Add css styles in Add a new Book section**
-- [x] **Create the Contact Information section**
-- [x] **Create the Navigation bar section**
-- [x] **Create the Navigation bar section**
+- [x] **Created an npm project with webpack**
+- [x] **Wrote plain HTML markup with minimum styling**
+- [x] **Used ES6 modules, with import and export**
+- [x] **Created a new game with the name of my choice by using the API**
+- [x] **Made sure that I saved the ID of my game that will be returned by API**
+- [x] **Implemented the "Refresh" button that will get all scores for a game created by me from the API (receiving data from the API and parsing the JSON)**
+- [x] **Implemented the form "Submit" button that will save a score for a game created (sending data to the API)**
+- [x] **Used arrow functions instead of the function keyword.**
+- [x] **Used async and await JavaScript features to consume the API.**
+- [x] **improved the look and feel of the application, adding the styles of my choice**
+- [x] **Kept the general layout of the wireframe, as the only mandatory requirement**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
