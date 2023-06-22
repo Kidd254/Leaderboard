@@ -9,6 +9,11 @@ module.exports = {
     print: './src/output.js',
   },
   devtool: 'inline-source-map',
+  devServer: {
+
+    static: './dist',
+
+  },
   plugins: [
 
     new HtmlWebpackPlugin({
@@ -43,6 +48,11 @@ module.exports = {
       },
 
     ],
+
+  },
+  optimization: {
+
+    runtimeChunk: 'single',
 
   },
 };
