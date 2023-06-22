@@ -25,12 +25,14 @@ body {
   justify-content: center;
   max-width: 1300px;
   margin: 0, auto;
+    height: 100vh;
+  width: 100%;
 }
 
 .mainscore-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding-right: 90px;
 }
 
@@ -83,6 +85,10 @@ body {
 #score-list {
   font-family: 'Dancing Script', cursive;
   font-weight: regular;
+  overflow-y: scroll;
+  max-height: 300px;
+  height: auto;
+  margin-left: 0;
 }
 
 .add-container {
