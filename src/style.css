@@ -80,6 +80,11 @@ body {
   background-color: #fff;
 }
 
+#score-list {
+  font-family: 'Dancing Script', cursive;
+  font-weight: regular;
+}
+
 .add-container {
   display: flex;
   flex-direction: column;
@@ -103,15 +108,21 @@ body {
 #name {
   border: 2px solid #000;
   height: 2em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: regular;
 }
 
 #score {
   border: 2px solid #000;
   height: 2em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: regular;
 }
 
 .submit {
   width: 100px;
   margin-left: auto;
   height: 2em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: regular;
 }
