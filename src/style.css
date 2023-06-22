@@ -68,6 +68,8 @@ body {
 
 .refresh:hover {
   background-color: blue;
+  border-radius: 8px;
+  box-shadow: black;
 }
 
 .display {
@@ -141,4 +143,5 @@ body {
 
 .submit:hover {
   background-color: blue;
+  border-radius: 8px;
 }
