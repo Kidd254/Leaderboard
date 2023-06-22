@@ -1,9 +1,11 @@
 @font-face {
   font-family: 'Dancing Script';
-  src: url('./fonts/DancingScript-Regular.ttf') format('ttf'),
-       url('./fonts/DancingScript-Bold.ttf') format('ttf'),
-       url('./fonts/DancingScript-Medium.ttf') format('ttf'),
-       url('./fonts/DancingScript-SemiBold.ttf') format('ttf');
+  src:
+    url('./fonts/DancingScript-Regular.ttf') format('ttf'),
+    url('./fonts/DancingScript-Bold.ttf') format('ttf'),
+    url('./fonts/DancingScript-Medium.ttf') format('ttf'),
+    url('./fonts/DancingScript-SemiBold.ttf') format('ttf');
+
   /* Add more src declarations for other font file formats if necessary */
   font-weight: normal;
   font-style: normal;
@@ -16,7 +18,7 @@ body {
 .heading {
   display: flex;
   justify-content: center;
-   font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   font-weight: bold;
 }
 
@@ -25,7 +27,7 @@ body {
   justify-content: center;
   max-width: 1300px;
   margin: 0, auto;
-    height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -60,8 +62,12 @@ body {
 .refresh {
   margin: 20px 0;
   margin-left: auto;
-    font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   font-weight: semi-bold;
+}
+
+.refresh:hover {
+  background-color: blue;
 }
 
 .display {
@@ -98,7 +104,7 @@ body {
 
 .add {
   order: 0;
-   font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   font-weight: semi-bold;
 }
 
@@ -131,4 +137,8 @@ body {
   height: 2em;
   font-family: 'Dancing Script', cursive;
   font-weight: regular;
+}
+
+.submit:hover {
+  background-color: blue;
 }
