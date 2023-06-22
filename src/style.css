@@ -1,13 +1,23 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('./fonts/DancingScript-Regular.ttf') format('ttf'),
+       url('./fonts/DancingScript-Bold.ttf') format('ttf'),
+       url('./fonts/DancingScript-Medium.ttf') format('ttf'),
+       url('./fonts/DancingScript-SemiBold.ttf') format('ttf');
+  /* Add more src declarations for other font file formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: burlywood;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: medium;
-  font-weight: bold;
 }
 
 .heading {
   display: flex;
   justify-content: center;
+   font-family: 'Dancing Script', cursive;
+  font-weight: bold;
 }
 
 .main {
@@ -41,11 +51,15 @@ body {
   order: 0;
   width: 150px;
   white-space: nowrap;
+  font-family: 'Dancing Script', cursive;
+  font-weight: semi-bold;
 }
 
 .refresh {
   margin: 20px 0;
   margin-left: auto;
+    font-family: 'Dancing Script', cursive;
+  font-weight: semi-bold;
 }
 
 .display {
@@ -73,6 +87,8 @@ body {
 
 .add {
   order: 0;
+   font-family: 'Dancing Script', cursive;
+  font-weight: semi-bold;
 }
 
 #form {
