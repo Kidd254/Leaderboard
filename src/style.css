@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Dancing Script';
-  src: url('./fonts/DancingScript-Regular.ttf') format('ttf'),
+  src:
+    url('./fonts/DancingScript-Regular.ttf') format('ttf'),
     url('./fonts/DancingScript-Bold.ttf') format('ttf'),
     url('./fonts/DancingScript-Medium.ttf') format('ttf'),
     url('./fonts/DancingScript-SemiBold.ttf') format('ttf');
@@ -11,7 +12,7 @@
 }
 
 body {
-  background-image: url(./Images/wallpaperflare.com_wallpaper\(8\).jpg);
+  background-image: url(./Images/wallpaperflare.com_wallpaper\(8\) .jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
