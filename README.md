@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [a link to the online version](https://kidd254.github.io/Leaderboard/dist/)
+- [a link to the online version](https://kidd254.github.io/Leaderboard/)
 
 - [a link to a presentation about this project]()
 
