@@ -12,7 +12,9 @@
 }
 
 body {
-  background-color: burlywood;
+  background-image: url(./Images/wallpaperflare.com_wallpaper\(8\) .jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .heading {
@@ -35,13 +37,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-right: 90px;
-}
-
-.scores-container {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
 }
 
 .score-heading {
@@ -53,14 +48,12 @@ body {
 
 .recent {
   order: 0;
-  width: 150px;
   white-space: nowrap;
   font-family: 'Dancing Script', cursive;
   font-weight: semi-bold;
 }
 
 .refresh {
-  margin: 20px 0;
   margin-left: auto;
   font-family: 'Dancing Script', cursive;
   font-weight: semi-bold;
@@ -73,13 +66,14 @@ body {
 }
 
 .display {
-  border: 2px solid black;
+  border: 2px solid magenta;
   border-radius: 6px;
-  background: #fff;
 }
 
 .list-container {
   display: flex;
+  margin-left: -30px;
+  margin-bottom: -40;
 }
 
 .list-container:nth-child(odd) {
@@ -87,7 +81,7 @@ body {
 }
 
 .list-container:nth-child(even) {
-  background-color: #fff;
+  background-color: cornsilk;
 }
 
 #score-list {
@@ -97,11 +91,6 @@ body {
   max-height: 300px;
   height: auto;
   margin-left: 0;
-}
-
-.add-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .add {
@@ -116,7 +105,6 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 20px;
-  width: 400px;
 }
 
 #name {
@@ -124,6 +112,10 @@ body {
   height: 2em;
   font-family: 'Dancing Script', cursive;
   font-weight: regular;
+}
+
+.name-added {
+  margin-left: 15px;
 }
 
 #score {
@@ -134,9 +126,7 @@ body {
 }
 
 .submit {
-  width: 100px;
   margin-left: auto;
-  height: 2em;
   font-family: 'Dancing Script', cursive;
   font-weight: regular;
 }

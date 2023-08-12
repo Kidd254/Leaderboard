@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-</head>
+  </head>
 
-<body>
-    <div class="heading">
-        <h1>Leaderboard</h1>
-    </div>
-    <div class="main">
-        <div class="mainscore-container">
+  <body class="bg-secondary">
+    <div class="container">
+     
+        <div class="heading mt-3">
+          <h1 class="text-white">Leaderboard</h1>
+        </div>
+         <div class="d-flex justify-content-center align-items-center mt-3"></div>
+        <div class="row justify-content-between">
+          <div class="mainscore-container col-md-5">
             <div class="scores-container">
-                <div class="score-heading">
-                    <h2 class="recent">Recent Scores</h2>
-                    <button class="refresh">Refresh</button>
-                </div>
+              <div class="score-heading">
+                <h2 class="recent text-white">Recent Scores</h2>
+                <button class="refresh rounded btn btn-light btn-outline-primary">Refresh</button>
+              </div>
             </div>
-            <div class="display">
-
-            </div>
-        </div>
-        <div class="add-container">
-            <h2 class="add">Add your score</h2>
+            <div class="display col-md-12"></div>
+          </div>
+          <div class="col-md-5 mt-4">
+            <h2 class="add text-white">Add your score</h2>
             <form action="" method="post" id="form">
-                <input type="text" id="name" placeholder="name..." required>
-                <input type="number" id="score" value="score" placeholder="score..." required>
-                <button type="button" class="submit">Submit</button>
+              <input type="text" id="name" placeholder="name..." required />
+              <input
+                type="number"
+                id="score"
+                value="score"
+                placeholder="score..."
+                required
+              />
+              <button type="button" class="submit rounded btn btn-light">Submit</button>
             </form>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
