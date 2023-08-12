@@ -36,6 +36,7 @@
     "ajv-keywords": "^3.5.2",
     "ansi-regex": "^5.0.1",
     "boolbase": "^1.0.0",
+    "bootstrap": "^5.3.1",
     "browserslist": "^4.21.9",
     "buffer-from": "^1.1.2",
     "camel-case": "^4.1.2",
