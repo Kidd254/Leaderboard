@@ -122,7 +122,7 @@ This will show you a log with details about errors (if any) and changes that wou
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Lawrence Kioko**
+👤 **Lawrence Muema Kioko**
 
 - GitHub: [@Kidd254](https://github.com/Kidd254)
 - Twitter: [@lawrence Kioko](https://twitter.com/lawrenc98789206)
